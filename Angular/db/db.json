@@ -1,0 +1,33 @@
+{
+  "teacher": [
+    {
+      "id": 1,
+      "email": "rk@gmail.com",
+      "password": "123456789"
+    },
+    {
+      "id": 1,
+      "email": "mk@gmail.com",
+      "password": "123456789"
+    },
+    {
+      "id": 1,
+      "email": "nk@gmail.com",
+      "password": "123456789"
+    },
+    {
+      "id": 1,
+      "email": "sk@gmail.com",
+      "password": "123456789"
+    }
+  ],
+  "student": [
+    {
+      "rollNo": 1233,
+      "name": "Rahul",
+      "date": "2004-06-09",
+      "score": 82.1,
+      "id": 1
+    }
+  ]
+}

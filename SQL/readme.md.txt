@@ -1,0 +1,1 @@
+Having AdventureWorks2008R2 database in your system to run these queries

@@ -1,0 +1,30 @@
+﻿@model BookEventModel
+@{
+    Layout = "_NewLayout";
+}
+<link href="~/css/Index.css" rel="stylesheet" />
+<div style="display: flex; flex-direction: column; align-items: center; margin-top: 20px">
+    <div style="width: 1240px;">
+        <h3 class="display-4" style="text-align:center" ;>UpComing Events</h3>
+        <div style="display:flex; gap:20px; flex-wrap: wrap; margin-top:20px">
+
+            @foreach (var data in ViewBag.UpComingEvents)
+            {
+                @if (DateTime.Compare(DateTime.Now.Date, data.DateOfEvent) < 0)
+                {
+                    <a asp-action="PastEvents" asp-controller="BookEvent" asp-route-id="@data.Eventid" asp-route-name="PastEvents">
+                        <div class="card shadow-lg" style="min-width: 200px; margin-bottom: 6px; float: left; margin-right: 6px; padding:12px; background-color:bisque; border-radius:10px">
+
+                            <h5 class="card-title">@data.Title</h5>
+                            <h6 class="card-subtitle mb-2 text-muted"><b>Description :</b> @data.EventDescription</h6>
+                            <h6 class="card-subtitle mb-2 text-muted"><b>Date :</b> @data.DateOfEvent</h6>
+                            <h6 class="card-subtitle mb-2 text-muted"><b>Duration :</b> @data.Duration</h6>
+                            <h6 class="card-subtitle mb-2 text-muted"><b>Location :</b> @data.EventLocation</h6>
+                            <h6 class="card-subtitle mb-2 text-muted"><b>StartTime :</b> @data.StartTime</h6>
+                        </div>
+                    </a>
+                }
+            }
+        </div>
+    </div>
+</div>

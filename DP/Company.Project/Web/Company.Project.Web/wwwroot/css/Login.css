@@ -1,0 +1,40 @@
+﻿
+
+.form-control {
+    align-items: center;
+    width: 40%;
+}
+
+.formdata {
+    align-items: center;
+    margin-left: 370px;
+}
+
+.heading {
+    margin-right: 200px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: black;
+    margin-top: 80px;
+}
+
+input {
+    border-radius: 7px;
+}
+
+label {
+    font-size: 25px;
+    color: black;
+}
+
+body {
+   background-color:palegreen;
+}
+#warning
+{
+    align-items:center;
+    text-align:center;
+    
+    width:50%;
+    
+}
